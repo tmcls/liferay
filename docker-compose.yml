@@ -58,7 +58,7 @@ services:
       context: .
       dockerfile: Dockerfile-haproxy
     ports:
-      - '8005:80'
+      - '80:80'
     hostname: haproxy.local    
     depends_on:
       - liferay-node1

@@ -1,2 +1,2 @@
-CATALINA_OPTS="$CATALINA_OPTS -Dfile.encoding=UTF8 -Djava.net.preferIPv4Stack=true -Dorg.apache.catalina.loader.WebappClassLoader.ENABLE_CLEAR_REFERENCES=false -Duser.timezone=GMT -Xms25600m -Xmx25600m -XX:PermSize=1024m -XX:MaxPermSize=1024m"
+CATALINA_OPTS="$CATALINA_OPTS -Dfile.encoding=UTF8 -Djava.net.preferIPv4Stack=true -Dorg.apache.catalina.loader.WebappClassLoader.ENABLE_CLEAR_REFERENCES=false -Duser.timezone=GMT -Xms10G -Xmx10G -XX:PermSize=1024m -XX:MaxPermSize=1024m -XX:+DisableExplicitGC"
 CATALINA_OPTS="${CATALINA_OPTS} ${LIFERAY_JVM_OPTS}"

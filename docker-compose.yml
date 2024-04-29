@@ -7,6 +7,8 @@ services:
     ports:
       - '6080:8080'
     hostname: liferay-node1.local
+    environment:
+      - JVM_OPTS=-Xms25600m -Xmx25600m -XX:MaxPermSize=1024m
     volumes:
       - lfr-dl-volume:/opt/liferay/data/document_library
       - ./deploy/portal-node-1:/opt/liferay/deploy
